@@ -47,3 +47,15 @@ var limitedOffers = [
         LimitedOfferM(asset: "Подрозетник", title: "Подрозетник IEK для твердых"),
         LimitedOfferM(asset: "Ламинат", title: "Ламинат Artens <Тангай> 33")
 ]
+
+var newYears = [
+    LimitedOfferM(asset: "Керамогранит", title: "Керамогранит Euroceramika"),
+    LimitedOfferM(asset: "Штукатурка", title: "Штукатурка гипсовая Knauf"),
+    LimitedOfferM(asset: "Грунтовка", title: "Грунтовка глубокого проникновения"),
+    LimitedOfferM(asset: "Перфоратор", title: "Перфоратор SDS-plus Makita"),
+    LimitedOfferM(asset: "Шпаклевка", title: "Шпаклевка полимерная"),
+    LimitedOfferM(asset: "Пена монтажная", title: "Пена монтажная пистолетная Axton"),
+    LimitedOfferM(asset: "Уровень лазерный", title: "Уровень лазерный Bosch"),
+    LimitedOfferM(asset: "Подрозетник", title: "Подрозетник IEK для твердых"),
+    LimitedOfferM(asset: "Ламинат", title: "Ламинат Artens <Тангай> 33")
+]

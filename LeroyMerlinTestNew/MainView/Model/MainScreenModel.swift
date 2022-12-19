@@ -36,3 +36,9 @@ struct LimitedOfferM {
     var title: String
     
 }
+
+struct NewYearsM {
+    var id = UUID().uuidString
+    var asset: String
+    var title: String
+}

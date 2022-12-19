@@ -92,10 +92,10 @@ struct TabMain: View {
                         .padding()
                         .padding(.vertical,45)
                 }
-                HStack(spacing: -15){
+                HStack(spacing: -20){
                     HStack(){
                         TextField("Поиск", text: $txt)
-                            .font(.system(size: 25))
+                            .font(.system(size: 20))
                             .padding()
                         Image("SearchIcon").resizable()
                             .frame(width: 70, height: 60, alignment: .center)
@@ -131,8 +131,8 @@ struct TabMain: View {
                     .navigationBarHidden(true)
                     
                         
-                Text("Предложение ограничено")
-                    .padding(.leading,-140)
+                Text("Вы смотрели")
+                    .padding(.leading,-175)
                    
                 
                 ContentLimitedOfferView()
@@ -141,13 +141,16 @@ struct TabMain: View {
                     .navigationBarHidden(true)
                     
                 
-                Text("Лучшая цена")
+                Text("Рекомендуем")
                     .padding(.leading,-175)
                 
                 ContentBestPriceView()
                     .navigationTitle("")
                     .navigationBarTitleDisplayMode(.inline)
                     .navigationBarHidden(true)
+                
+                Text("Новогодние украшения")
+                    .padding(.leading,-175)
                     
                 
             }
@@ -218,7 +221,7 @@ struct CatalogView: View {
         }
     }
 }
-
+//каталог,расстояние
 struct CatalogCardView: View {
     
     var catalog: CatalogM
@@ -323,7 +326,7 @@ struct ContentBestPriceView: View {
         VStack {
             Divider()
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: -10) {
+                HStack(spacing: -15) {
                     ForEach(bestPrices, id: \.title){course in
                         NavigationLink(destination: BestPriceDetailView(bestPrice: course)) {
                             BestPriceCardView(bestPrice: course)
