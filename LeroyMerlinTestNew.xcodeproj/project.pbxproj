@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		8CA752D529507BB000EC6627 /* LeroyMerlinTestNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752D429507BB000EC6627 /* LeroyMerlinTestNewApp.swift */; };
-		8CA752D729507BB000EC6627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752D629507BB000EC6627 /* ContentView.swift */; };
 		8CA752D929507BB300EC6627 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA752D829507BB300EC6627 /* Assets.xcassets */; };
 		8CA752DC29507BB300EC6627 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CA752DB29507BB300EC6627 /* Preview Assets.xcassets */; };
+		8CA752E52950895700EC6627 /* MainScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752E42950895700EC6627 /* MainScreenModel.swift */; };
+		8CA752E829508BE700EC6627 /* MainScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752E729508BE700EC6627 /* MainScreenViewModel.swift */; };
+		8CA752EB29508D6B00EC6627 /* MainScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752EA29508D6B00EC6627 /* MainScreenView.swift */; };
+		8CA752F12950915E00EC6627 /* LoadingScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752F02950915E00EC6627 /* LoadingScreenModel.swift */; };
+		8CA752F3295091B000EC6627 /* LoadingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752F2295091B000EC6627 /* LoadingScreenView.swift */; };
+		8CA752F5295091C800EC6627 /* LoadingScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752F4295091C800EC6627 /* LoadingScreenViewModel.swift */; };
+		8CA752F72950941100EC6627 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CA752F62950941100EC6627 /* ContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8CA752D129507BB000EC6627 /* LeroyMerlinTestNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeroyMerlinTestNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CA752D429507BB000EC6627 /* LeroyMerlinTestNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeroyMerlinTestNewApp.swift; sourceTree = "<group>"; };
-		8CA752D629507BB000EC6627 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8CA752D829507BB300EC6627 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CA752DB29507BB300EC6627 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8CA752E42950895700EC6627 /* MainScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenModel.swift; sourceTree = "<group>"; };
+		8CA752E729508BE700EC6627 /* MainScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewModel.swift; sourceTree = "<group>"; };
+		8CA752EA29508D6B00EC6627 /* MainScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenView.swift; sourceTree = "<group>"; };
+		8CA752F02950915E00EC6627 /* LoadingScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenModel.swift; sourceTree = "<group>"; };
+		8CA752F2295091B000EC6627 /* LoadingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenView.swift; sourceTree = "<group>"; };
+		8CA752F4295091C800EC6627 /* LoadingScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenViewModel.swift; sourceTree = "<group>"; };
+		8CA752F62950941100EC6627 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,8 @@
 		8CA752C829507BB000EC6627 = {
 			isa = PBXGroup;
 			children = (
+				8CA752D429507BB000EC6627 /* LeroyMerlinTestNewApp.swift */,
+				8CA752F62950941100EC6627 /* ContentView.swift */,
 				8CA752D329507BB000EC6627 /* LeroyMerlinTestNew */,
 				8CA752D229507BB000EC6627 /* Products */,
 			);
@@ -51,8 +65,8 @@
 		8CA752D329507BB000EC6627 /* LeroyMerlinTestNew */ = {
 			isa = PBXGroup;
 			children = (
-				8CA752D429507BB000EC6627 /* LeroyMerlinTestNewApp.swift */,
-				8CA752D629507BB000EC6627 /* ContentView.swift */,
+				8CA752E22950890900EC6627 /* MainView */,
+				8CA752EC295090AE00EC6627 /* LoadingScreen */,
 				8CA752D829507BB300EC6627 /* Assets.xcassets */,
 				8CA752DA29507BB300EC6627 /* Preview Content */,
 			);
@@ -65,6 +79,74 @@
 				8CA752DB29507BB300EC6627 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8CA752E22950890900EC6627 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752E32950892B00EC6627 /* Model */,
+				8CA752E929508D4F00EC6627 /* View */,
+				8CA752E629508B8000EC6627 /* ViewModel */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		8CA752E32950892B00EC6627 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752E42950895700EC6627 /* MainScreenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CA752E629508B8000EC6627 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752E729508BE700EC6627 /* MainScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8CA752E929508D4F00EC6627 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752EA29508D6B00EC6627 /* MainScreenView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8CA752EC295090AE00EC6627 /* LoadingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752ED295090CD00EC6627 /* Model */,
+				8CA752EF295090F200EC6627 /* View */,
+				8CA752EE295090D400EC6627 /* ViewModel */,
+			);
+			path = LoadingScreen;
+			sourceTree = "<group>";
+		};
+		8CA752ED295090CD00EC6627 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752F02950915E00EC6627 /* LoadingScreenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8CA752EE295090D400EC6627 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752F4295091C800EC6627 /* LoadingScreenViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8CA752EF295090F200EC6627 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8CA752F2295091B000EC6627 /* LoadingScreenView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CA752D729507BB000EC6627 /* ContentView.swift in Sources */,
+				8CA752F5295091C800EC6627 /* LoadingScreenViewModel.swift in Sources */,
+				8CA752EB29508D6B00EC6627 /* MainScreenView.swift in Sources */,
+				8CA752F72950941100EC6627 /* ContentView.swift in Sources */,
+				8CA752F12950915E00EC6627 /* LoadingScreenModel.swift in Sources */,
+				8CA752E829508BE700EC6627 /* MainScreenViewModel.swift in Sources */,
 				8CA752D529507BB000EC6627 /* LeroyMerlinTestNewApp.swift in Sources */,
+				8CA752F3295091B000EC6627 /* LoadingScreenView.swift in Sources */,
+				8CA752E52950895700EC6627 /* MainScreenModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +363,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,6 +393,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
