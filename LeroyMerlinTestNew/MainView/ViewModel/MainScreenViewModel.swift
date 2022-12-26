@@ -49,13 +49,13 @@ var limitedOffers = [
 ]
 
 var newYears = [
-    LimitedOfferM(asset: "Керамогранит", title: "Керамогранит Euroceramika"),
-    LimitedOfferM(asset: "Штукатурка", title: "Штукатурка гипсовая Knauf"),
-    LimitedOfferM(asset: "Грунтовка", title: "Грунтовка глубокого проникновения"),
-    LimitedOfferM(asset: "Перфоратор", title: "Перфоратор SDS-plus Makita"),
-    LimitedOfferM(asset: "Шпаклевка", title: "Шпаклевка полимерная"),
-    LimitedOfferM(asset: "Пена монтажная", title: "Пена монтажная пистолетная Axton"),
-    LimitedOfferM(asset: "Уровень лазерный", title: "Уровень лазерный Bosch"),
-    LimitedOfferM(asset: "Подрозетник", title: "Подрозетник IEK для твердых"),
-    LimitedOfferM(asset: "Ламинат", title: "Ламинат Artens <Тангай> 33")
+    NewYearsM(asset: "Керамогранит", title: "Керамогранит Euroceramika"),
+    NewYearsM(asset: "Штукатурка", title: "Штукатурка гипсовая Knauf"),
+    NewYearsM(asset: "Грунтовка", title: "Грунтовка глубокого проникновения"),
+    NewYearsM(asset: "Перфоратор", title: "Перфоратор SDS-plus Makita"),
+    NewYearsM(asset: "Шпаклевка", title: "Шпаклевка полимерная"),
+    NewYearsM(asset: "Пена монтажная", title: "Пена монтажная пистолетная Axton"),
+    NewYearsM(asset: "Уровень лазерный", title: "Уровень лазерный Bosch"),
+    NewYearsM(asset: "Подрозетник", title: "Подрозетник IEK для твердых"),
+    NewYearsM(asset: "Ламинат", title: "Ламинат Artens <Тангай> 33")
 ]

@@ -37,7 +37,7 @@ struct CustomTabView: View {
                 
                 
             }
-                .padding(.vertical,-50)
+                .padding(.vertical,-20)
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .edgesIgnoringSafeArea([.top])
             
@@ -45,17 +45,17 @@ struct CustomTabView: View {
                 ForEach(tabsV.tabsVM.image,id: \.self){image in
                     TabButton(image: image, selectedTab: $selectedTab)
                     if image != tabsV.tabsVM.image.last {
-                        Spacer(minLength: 10)
+                        Spacer(minLength: 18)
                     }
                 }
             }
-                .padding(.horizontal,45)
-                .padding(.vertical,10)
+                .padding(.horizontal,50)
+                .padding(.vertical,8)
                 .background(Color.white)
-                .shadow(color: Color.black.opacity(0.05),radius: 5, x: -5, y: -5)
+                .shadow(color: Color.black.opacity(0.02),radius: 5, x: -5, y: -5)
                 .padding(.vertical)
-                .padding(.bottom, edge.bottom == 0 ? 0 : -50)
-                .padding(.vertical,-10)
+                .padding(.bottom, edge.bottom == 0 ? 0 : -55)
+                .padding(.vertical,-55)
             
         }
     }
@@ -71,9 +71,9 @@ struct TabButton: View {
             Image(image).resizable()
                 .renderingMode(.template)
                 .foregroundColor(selectedTab == image ? Color("ColorGreen") : Color.black.opacity(1.5))
-                .frame(width: 55, height: 45)
+                .frame(width: 50, height: 35)
         }
-            .frame(width: 35, height: 75)
+            .frame(width: 30, height: 30)
     }
 }
 
@@ -122,7 +122,7 @@ struct TabMain: View {
             
             
             
-            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: -10) {
+            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 10) {
                 
                 
                 CatalogView()
@@ -152,6 +152,10 @@ struct TabMain: View {
                 Text("Новогодние украшения")
                     .padding(.leading,-175)
                     
+                ContentLimitedOfferView()
+                    .navigationTitle("")
+                    .navigationBarTitleDisplayMode(.inline)
+                    .navigationBarHidden(true)
                 
             }
         }
